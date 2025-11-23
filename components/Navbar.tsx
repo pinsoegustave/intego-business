@@ -5,43 +5,56 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <nav className='flexBetween max-container padding-container relative z-30 py-5'>
-        <Link href={"/"} className='w-[116px] h-10'>
-            <b className='uppercase text-[#034833] regular-32 bold-32'>intego</b>
+   <nav className="relative z-30 py-5 px-6 lg:px-20 2xl:px-0">
+    <div className="max-w-7xl mx-auto flex items-center justify-between">
+        
+        {/* Left - Logo */}
+        <Link href={"/"}>
+            <b className="uppercase text-[#034833] text-2xl font-bold">intego</b>
         </Link>
 
-        <ul className='hidden h-full gap-12 lg:flex'>
-            { NAV_LINKS.map((link) => (
-                <Link href={link.href} key={link.key} className='regular-16 text-[#034833] flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold uppercase'>
-                    {link.label}
-                </Link>
-            )) }
-        </ul>
+        {/* Center - Navigation Links */}
+        <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2">
+            <ul className="flex gap-12">
+                {NAV_LINKS.map((link) => (
+                    <Link 
+                        href={link.href} 
+                        key={link.key} 
+                        className="text-base text-[#034833] cursor-pointer pb-1.5 transition-all hover:font-bold uppercase"
+                    >
+                        {link.label}
+                    </Link>
+                ))}
+            </ul>
+        </div>
 
-        <div className='lg:flexCenter flex text-black gap-4'>
+        {/* Right - Contact Info & Menu */}
+        <div className="flex items-center gap-4">
+            {/* Desktop Contact Info */}
+            <div className="hidden lg:flex items-center justify-self-end gap-4 text-black">
+                <Image 
+                    src="chat.svg"
+                    alt="chat"
+                    width={32}
+                    height={32}
+                    className="cursor-pointer"
+                />
+                <div>
+                    <p>Need help?</p>
+                    <b className="text-[#034833]">(250) 234-5678</b>
+                </div>
+            </div>
+
+            {/* Mobile Menu */}
             <Image 
-                src="chat.svg"
-                alt='chat'
+                src="menu.svg"
+                alt="menu"
                 width={32}
                 height={32}
-                className='inline-block cursor-pointer'
+                className="cursor-pointer lg:hidden"
             />
-            <div className='text-black'>
-                <p>Need help?</p>
-                <b className='text-[#034833]'>(250) 234-5678</b>
-            </div>
         </div>
-
-        <Image 
-            src="menu.svg"
-            alt='menu'
-            width={32}
-            height={32}
-            className='inline-block cursor-pointer lg:hidden'
-        />
-        <div>
-            
-        </div>
-    </nav>
+    </div>
+</nav>
   )
 }
