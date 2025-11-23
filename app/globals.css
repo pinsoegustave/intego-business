@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -10,21 +12,25 @@
   font-family:
 } */
 
+@theme {
+  --breakpoint-3xl: 1680px;
+}
+
 @layer utilities {
   .btn_white {
     @apply border-white bg-white px-8 py-3 text-green-50
   }
   .btn_white_text {
-    @apply border-white bg-white px-8 py-3 text-gray-90
+    @apply border-white bg-white px-8 py-3 text-gray-900
   }
   .btn_green {
     @apply border-green-50 bg-green-50 px-8 py-5 text-white
   }
   .btn_dark_green {
-    @apply bg-green-90 px-0 py-4 text-white transition-all hover:bg-black
+    @apply bg-green-900 px-0 py-4 text-white transition-all hover:bg-black
   }
   .btn_dark_green_outline {
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+    @apply border-gray-200 bg-green-900 px-8 py-5 text-white
   }
 
   .max-container {  
@@ -32,7 +38,7 @@
   }
 
   .padding-container {
-    @apply px-6 lg:px-20 3xl:px-0;
+    @apply px-6 lg:px-20 2xl:px-0;
   }
 
   .flexCenter {
@@ -65,7 +71,7 @@
     @apply text-[24px] font-[400px]
   }
   .regular-20 {
-    @apply tex-[20px] font-[400px]
+    @apply text-[20px] font-[400px]
   }
   .regular-18 {
     @apply text-[18px] font-[400px];
