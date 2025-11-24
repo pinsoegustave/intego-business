@@ -17,40 +17,24 @@
 @layer utilities {
 
   .btn_white {
-    @apply border-white bg-white px-8 py-3 text-green-50
+    @apply border-2 border-white bg-white text-[#034833] hover:bg-gray-50 hover:border-gray-200 focus:ring-white
   }
   .btn_white_text {
-    @apply border-white bg-white px-8 py-3 text-gray-900
+    @apply border-2 border-white bg-white text-gray-900 hover:bg-gray-50 hover:border-gray-200 focus:ring-white
   }
   .btn_green {
-    @apply border-green-50 bg-green-50 px-8 py-5 text-white
+    @apply border-2 border-green-50 bg-green-50 text-white hover:bg-green-100 hover:border-green-100 focus:ring-green-50
   }
   .btn_dark_green {
-    @apply bg-green-900 px-0 py-4 text-white transition-all hover:bg-black
+    @apply border-2 border-[#034833] bg-[#034833] text-white hover:bg-[#023025] hover:border-[#023025] hover:shadow-lg focus:ring-[#034833] shadow-md
   }
   .btn_dark_green_outline {
-    @apply border-gray-200 bg-green-900 px-8 py-5 text-white
+    @apply border-2 border-[#034833] bg-transparent text-[#034833] hover:bg-[#034833] hover:text-white focus:ring-[#034833]
   }
 
   .max-container {  
     @apply mx-auto max-w-full;  
-  }  
-  .btn_white {
-    @apply border-white bg-white px-8 py-3 text-green-50
   }
-  .btn_white_text {
-    @apply border-white bg-white px-8 py-3 text-gray-900
-  }
-  .btn_green {
-    @apply border-green-50 bg-green-50 px-8 py-5 text-white
-  }
-  .btn_dark_green {
-    @apply bg-green-900 px-0 py-4 text-white transition-all hover:bg-black
-  }
-  .btn_dark_green_outline {
-    @apply border-gray-200 bg-green-900 px-8 py-5 text-white
-  }
-  
 
   .padding-container {
     @apply px-6 lg:px-20 2xl:px-0;
