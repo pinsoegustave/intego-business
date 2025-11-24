@@ -17,7 +17,7 @@
 @layer utilities {
 
   .btn_white {
-    @apply border-2 border-white bg-white text-[#034833] hover:bg-gray-50 hover:border-gray-200 focus:ring-white
+    @apply border-none bg-[#83CD20] text-[white] hover:bg-gray-50 hover:text-black focus:text-green-500
   }
   .btn_white_text {
     @apply border-2 border-white bg-white text-gray-900 hover:bg-gray-50 hover:border-gray-200 focus:ring-white
