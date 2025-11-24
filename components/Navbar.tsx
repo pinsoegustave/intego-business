@@ -5,54 +5,75 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-   <nav className="ml-12 relative z-30 ">
-    <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-20 2xl:px-24">
+    <nav className="w-full py-4 px-4 sm:px-6 lg:px-8 bg-white">
+    <div className="max-w-7xl mx-auto flex items-center justify-between">
         
         {/* Left - Logo */}
-        <Link href={"/"}>
-            <b className="uppercase text-[#034833] text-2xl font-bold">intego</b>
-        </Link>
+        <div className="shrink-0">
+            <Link href="/" className="flex items-center">
+                <b className="text-2xl font-bold text-[#034833] uppercase">intego</b>
+            </Link>
+        </div>
 
         {/* Center - Navigation Links */}
         <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2">
-            <ul className="flex gap-12">
+            <ul className="flex space-x-8">
                 {NAV_LINKS.map((link) => (
-                    <Link 
-                        href={link.href} 
-                        key={link.key} 
-                        className="text-base text-[#034833] cursor-pointer pb-1.5 transition-all hover:font-bold uppercase"
-                    >
-                        {link.label}
-                    </Link>
+                    <li key={link.key}>
+                        <Link 
+                            href={link.href}
+                            className="text-gray-700 hover:text-[#034833] font-medium transition-colors duration-200"
+                        >
+                            {link.label}
+                        </Link>
+                    </li>
                 ))}
             </ul>
         </div>
 
-        {/* Right - Contact Info & Menu */}
-        <div className="flex items-center gap-4">
-            {/* Desktop Contact Info */}
-            <div className="hidden lg:flex items-center justify-self-end gap-4 text-black">
+        {/* Right - Contact & Mobile Menu */}
+        <div className="flex items-center space-x-4">
+            
+            {/* Desktop Contact Info - Hidden on mobile */}
+            <div className="hidden lg:flex items-center space-x-3">
                 <Image 
-                    src="chat.svg"
-                    alt="chat"
-                    width={32}
-                    height={32}
-                    className="cursor-pointer"
+                    src="/chat.svg"
+                    alt="Chat"
+                    width={24}
+                    height={24}
+                    className="text-gray-600"
                 />
-                <div>
-                    <p>Need help?</p>
-                    <b className="text-[#034833]">(250) 234-5678</b>
+                <div className="text-right">
+                    <p className="text-sm text-gray-600">Need help?</p>
+                    <p className="text-sm font-semibold text-[#034833]">(250) 234-5678</p>
                 </div>
             </div>
 
-            {/* Mobile Menu */}
-            <Image 
-                src="menu.svg"
-                alt="menu"
-                width={32}
-                height={32}
-                className="cursor-pointer lg:hidden"
-            />
+            {/* Mobile Menu Button - Hidden on desktop */}
+            <button className="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100">
+                <Image 
+                    src="/menu.svg"
+                    alt="Menu"
+                    width={24}
+                    height={24}
+                />
+            </button>
+        </div>
+    </div>
+
+    {/* Mobile Menu - Dropdown */}
+    <div className="lg:hidden">
+        {/* Add your mobile dropdown menu here */}
+        <div className="px-4 pt-2 pb-3 space-y-1 bg-white border-t">
+            {NAV_LINKS.map((link) => (
+                <Link 
+                    key={link.key}
+                    href={link.href}
+                    className="block px-3 py-2 text-gray-700 hover:text-[#034833] hover:bg-gray-50 rounded-md"
+                >
+                    {link.label}
+                </Link>
+            ))}
         </div>
     </div>
 </nav>
