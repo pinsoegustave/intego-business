@@ -1,12 +1,12 @@
-import { NAV_LINKS } from '@/constants'
+ import { NAV_LINKS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 export default function Navbar() {
   return (
-   <nav className="relative z-30 py-5 px-6 lg:px-20 2xl:px-0">
-    <div className="max-w-7xl mx-auto flex items-center justify-between">
+   <nav className="ml-12 relative z-30 ">
+    <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-20 2xl:px-24">
         
         {/* Left - Logo */}
         <Link href={"/"}>

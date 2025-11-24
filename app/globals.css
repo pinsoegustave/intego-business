@@ -1,21 +1,16 @@
 @import "tailwindcss";
 
-@tailwind utilities;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 
 /* body {
   font-family:
 } */
-
-@theme {
-  --breakpoint-3xl: 1680px;
-}
-
 
 
 
