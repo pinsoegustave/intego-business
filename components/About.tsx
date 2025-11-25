@@ -43,27 +43,30 @@ export default function About() {
         />
       </div>
       {/* Right */}
-      <div className="border-2 border-red-600">
+      <div className="border-2 border-red-600 w-1/2">
         <h2>ABOUT US</h2>
-        <h2 className="regular-32">Unlock Opportunity Through Financial Clarity</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium non quo iusto odit pariatur.</p>
-        <div>
-            <div>
-                <h4>Business Guides</h4>
+        <h1 className="text-[50px] font-bold leading-[60px]">Unlock Opportunity <br /> Through Financial Clarity</h1>
+        <p className="w-124 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium non quo iusto odit pariatur.</p>
+        <div className="flex my-4 gap-4">
+            <div className="">
+                <h4 className="text-[#034833] text-[18px] leading-7 font-semibold">Business Guides</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolor veritatis deleniti numquam</p>
             </div>
             <div>
-                <h4>Financial Consultancy</h4>
-                <p>consequatur sequi illo facilis maxime natus fuga iste iusto, quaerat necessitatibus blanditiis,</p>
+                <h4 className="text-[#034833] text-[18px] leading-7 font-semibold">Financial Consultancy</h4>
+                <p>consequatur sequi illo facilis maxime natus fuga iste iusto, quaerat necessitatibus</p>
             </div>
         </div>
-        {/* Button */}
-        <Button 
-            title=""
-            variant=""
-            type="button"
-            icon=""
-        />
+             {/* Button */}
+        <div className="mt-8">
+            <Button 
+                title="Contact Us"
+                variant="btn_white"
+                type="button"
+                icon=""
+            />
+        </div>
+       
       </div>
     </section>
   );
