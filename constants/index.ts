@@ -22,6 +22,54 @@ export const NAV_LINKS = [
     },
 ];
 
+export const SERVICES = [
+    {
+        icon: "",
+        title: "Human Resource Management",
+        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+    },
+    {
+        icon: "",
+        title: "Bookkeeping",
+        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+    },
+    {
+        icon: "",
+        title: "Accounting",
+        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+    },
+    {
+        icon: "",
+        title: "Tax Declaration",
+        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+    },
+    {
+        icon: "",
+        title: "Management Consultancy",
+        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+    },
+    {
+        icon: "",
+        title: "Financial Consultancy",
+        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+    },
+    {
+        icon: "",
+        title: "Tax Declaration",
+        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+    },
+    {
+        icon: "",
+        title: "Management Consultancy",
+        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+    },
+    {
+        icon: "",
+        title: "Financial Management",
+        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+    },
+]
+
 export const FOOTER_LINKS = [
     {
         title: "Service Menu",
