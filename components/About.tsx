@@ -4,8 +4,8 @@ import Button from "./Button";
 
 export default function About() {
   return (
-    <section className="max-container padding-container relative bg-fuchsia-500 border-4 border-amber-400 flexBetween">
-      <div className="grid grid-cols-2 p-4 border-2 border-green-400">
+    <section className="max-container padding-container relative flexBetween">
+      <div className="grid grid-cols-2 p-4">
         <Image
           src="rectangle.svg"
           alt="Image 1"
@@ -43,9 +43,9 @@ export default function About() {
         />
       </div>
       {/* Right */}
-      <div className="border-2 border-red-600 w-1/2">
-        <h2>ABOUT US</h2>
-        <h1 className="text-[50px] font-bold leading-[60px]">Unlock Opportunity <br /> Through Financial Clarity</h1>
+      <div className="w-1/2">
+        <h2 className="text-sm font-bold text-[#034833]">ABOUT US</h2>
+        <h1 className="text-[50px] font-bold leading-[60px]">Unlock Opportunity <br /> <span className="text-[#034833]"> Through Financial Clarity </span></h1>
         <p className="w-124 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium non quo iusto odit pariatur.</p>
         <div className="flex my-4 gap-4">
             <div className="">
