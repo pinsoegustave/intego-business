@@ -4,7 +4,7 @@ import Button from './Button'
 
 export default function Hero() {
   return (
-    <section className='max-container padding-container flex flex-col gap-20 pt-0 pb-32 md:gap-28 lg:pb-20 xl:flex-row relative'>
+    <section className='padding-container flex flex-col gap-20 pt-0 pb-32 md:gap-28 lg:pb-20 xl:flex-row relative'>
         <Image 
             src="frame.svg"
             alt='hero-image'
