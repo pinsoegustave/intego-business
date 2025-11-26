@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section className="w-[98%] mx-auto max-w-full bg-[#F1F5EB] rounded-2xl">
+    <section className="w-[98%] mx-auto max-w-full bg-[#F1F5EB] rounded-2xl mt-24">
       <div className="w-[80%] mx-auto max-container padding-container py-24 flex-1">
         <div className="">
           <h2 className="text-sm font-bold text-[#034833]">OUR SERVICES</h2>

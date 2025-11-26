@@ -100,7 +100,7 @@ export const FOOTER_LINKS = [
     }
 ];
 
-export const terms = [
+export const TERMS = [
     'Terms & Condition',
     'Privacy Policy',
     'Contact Us'
