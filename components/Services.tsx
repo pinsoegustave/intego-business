@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section className="border-2 border-amber-400 w-full max-w-full bg-[#F1F5EB]">
-      <div className="max-container padding-container py-24 border-2 border-red-500">
+    <section className="w-[98%] mx-auto max-w-full bg-[#F1F5EB] rounded-2xl">
+      <div className="w-[80%] mx-auto max-container padding-container py-24 flex-1">
         <div className="">
           <h2 className="text-sm font-bold text-[#034833]">OUR SERVICES</h2>
           <h1 className="text-[50px] font-bold leading-[60px]">
@@ -13,7 +13,7 @@ export default function Services() {
           </h1>
         </div>
         {/* rectangles */}
-        <div className="mt-12 flex flex-rows-3 gap-8 p-4">
+        <div className="mt-12 flex flex-rows-3 gap-8">
           <div className="w-[410px] h-[400px] bg-white flex flex-col items-center justify-center rounded-2xl">
             <div className="bg-[#83CD20] text-white p-4 my-4 flex items-center justify-center rounded-full">
                 <Image 
