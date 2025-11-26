@@ -15,13 +15,13 @@ export default function Services() {
         {/* rectangles */}
         <div className="mt-12 flex flex-rows-3 gap-8 p-4">
           <div className="w-[410px] h-[400px] bg-white flex flex-col items-center justify-center rounded-2xl">
-            <div className="bg-[#83CD20] text-white p-4 my-4 rounded-full">
+            <div className="bg-[#83CD20] text-white p-4 my-4 flex items-center justify-center rounded-full">
                 <Image 
                 src="book.svg"
                 alt="Human"
                 width={50}
                 height={50}
-                className="rounded-full"
+                className="object-contain"
             />
             </div>
             <div className="text-center">
@@ -30,13 +30,13 @@ export default function Services() {
             </div>
           </div>
           <div className="w-[410px] h-[400px] bg-white border border-green-500 flex flex-col items-center justify-center rounded-2xl">
-            <div className="bg-[#83CD20] text-white p-4 my-4 z-0 rounded-full">
+            <div className="bg-[#83CD20] text-white p-4 my-4 flex items-center justify-center rounded-full">
                 <Image 
                 src="visa.svg"
                 alt="Human"
                 width={50}
                 height={50}
-                className="z-10 relative rounded-full"
+                className="object-contain"
             />
             </div>
             <div className="text-center">
@@ -45,13 +45,13 @@ export default function Services() {
             </div>
           </div>
           <div className="w-[410px] h-[400px] bg-white flex flex-col items-center justify-center rounded-2xl">
-            <div className="bg-[#83CD20] text-white p-4 my-4 items-center rounded-full">
+            <div className="bg-[#83CD20] text-white p-4 my-4 flex items-center justify-center rounded-full">
                 <Image 
                 src="book.svg"
                 alt="Human"
                 width={45}
                 height={45}
-                className="z-10 rounded-full"
+                className="z-10 object-contain"
             />
             </div>
             <div className="text-center">
