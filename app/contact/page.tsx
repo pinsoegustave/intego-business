@@ -1,5 +1,6 @@
 import Bannerc from '@/components/Bannerc'
 import Info from '@/components/Info'
+import Location from '@/components/Location'
 import React from 'react'
 
 export default function page() {
@@ -7,6 +8,7 @@ export default function page() {
     <div>
         <Bannerc />
         <Info />
+        <Location />
     </div>
   )
 }

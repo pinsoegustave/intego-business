@@ -108,3 +108,11 @@ export const TERMS = [
     'Privacy Policy',
     'Contact Us'
 ]
+
+export const PROVINCES = [
+    'Northern',
+    'Eastern',
+    'Kigali City',
+    'Southern',
+    'Western'
+]
