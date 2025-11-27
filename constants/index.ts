@@ -24,48 +24,51 @@ export const NAV_LINKS = [
 
 export const SERVICES = [
     {
-        icon: "",
+        icon: "refugee.svg",
+        key: "abc",
         title: "Human Resource Management",
         desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
     },
     {
-        icon: "",
+        icon: "/browser.png",
+        key: "abd",
         title: "Bookkeeping",
         desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
     },
     {
-        icon: "",
+        icon: "/law.png",
+        key: "abe",
         title: "Accounting",
         desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
     },
     {
-        icon: "",
+        icon: "meeting.svg",
+        key: "abf",
         title: "Tax Declaration",
         desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
     },
     {
-        icon: "",
+        icon: "shield.svg",
+        key: "abg",
         title: "Management Consultancy",
         desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
     },
     {
-        icon: "",
+        icon: "meeting.svg",
+        key: "abh",
         title: "Financial Consultancy",
         desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
     },
     {
-        icon: "",
+        icon: "/law.png",
+        key: "abi",
         title: "Tax Declaration",
         desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
     },
     {
-        icon: "",
+        icon: "shield.svg",
+        key: "abj",
         title: "Management Consultancy",
-        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
-    },
-    {
-        icon: "",
-        title: "Financial Management",
         desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
     },
 ]
