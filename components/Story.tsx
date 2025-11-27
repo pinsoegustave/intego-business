@@ -3,9 +3,9 @@ import React from "react";
 
 export default function Story() {
   return (
-    <section className="w-full max-w-full my-24 bg-amber-200">
-      <div className="border-2 border-red-500 padding-container max-container grid md:grid-cols-2">
-        <div className="flex gap-4">
+    <section className="w-full max-w-full my-24">
+      <div className="padding-container max-container grid md:grid-cols-2 gap-10">
+        <div className="flex flex-col md:flex-row gap-4">
           <div>
             <Image
               src="rect1.svg"
@@ -36,7 +36,11 @@ export default function Story() {
             />
           </div>
         </div>
-        <div></div>
+        <div className="flex flex-col gap-2">
+            <h3 className="text-md font-bold text-[#034833]">OUR STORY</h3>
+            <h1 className="regular-32 font-bold">Where Consultancy Meets <br /> <span className="text-[#034833]">Finance & Business</span></h1>
+            <p className="mt-2 w-full max-w-[630px]">Et purus duis sollicitudin dignissim habitant. Egestas nulla quis venenatis cras sed eu massa Et purus duis sollicitudin dignissim habitant. Egestas nulla quis venenatis cras sed eu massa Et purus duis sollicitudin dignissim habitant. Egestas nullaEt purus duis sollicitudin dignissim habitant. Egestas nulla quis venenatis cras sed eu massa Et purus duis sollicitudin dignissim habitant. Egestas nulla quis venenatis cras sed eu massa Et purus duis sollicitudin dignissim habitant. Egestas nullaEt purus duis sollicitudin dignissim habitant. Egestas nulla quis venenatis cras sed eu massa Et purus duis sollicitudin dignissim habitant. Egestas nulla quis venenatis cras sed eu massa Et purus duis sollicitudin dignissim habitant. Egestas nullaEt purus duis sollicitudin dignissim habitant. Egestas nulla quis venenatis cras sed eu massa Et purus duis sollicitudin dignissim habitant. Egestas nulla quis venenatis cras sed eu massa Et purus duis sollicitudin dignissim habitant. Egestas nulla</p>
+        </div>
       </div>
     </section>
   );
