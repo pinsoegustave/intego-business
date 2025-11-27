@@ -10,7 +10,7 @@ export default function page() {
         <Banner />
         <Story />
         <Testimonial />
-        {/* <Footer /> */}
+        <Footer />
     </div>
   )
 }

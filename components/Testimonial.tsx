@@ -4,8 +4,8 @@ import React from 'react'
 
 export default function Testimonial() {
   return (
-    <section className='w-full border-2 border-amber-400'>
-        <div className='padding-container max-container p-5 border-2 border-green-400 my-4'>
+    <section className='w-full'>
+        <div className='padding-container max-container p-5 my-4'>
             <Image 
             src="quote.svg"
             alt='quote'
@@ -18,9 +18,9 @@ export default function Testimonial() {
                 <h1 className="mx-auto w-[380px] text-[#034833] text-center regular-32 font-bold">Empowering Your Path to Prosperity</h1>
             </div>
             <div className='flex mt-10 items-center'>
-                <div className='w-[60%] h-[40%] border-2 border-amber-200 rounded-2xl shadow-2xl -mr-8 z-10 bg-[#FFFF]'>
-                    <p className='regular-24 text-[#034833] border-2 border-red-500 w-[620px] mx-auto p-6'>Leverage agile frameworks to provide a robust syns is for strategy foster Leverage agile frameworks to provide a robust synopsis for go for strategy foster </p>
-                    <div className='w-[80%] mx-auto flex p-6 flexBetween border-2 border-amber-300'>
+                <div className='w-[50%] h-[40%] rounded-2xl shadow-2xl mx-auto -mr-8 z-10 bg-[#FFFF]'>
+                    <p className='regular-24 text-[#034833] w-[620px] mx-auto p-6'>Leverage agile frameworks to provide a robust syns is for strategy foster Leverage agile frameworks to provide a robust synopsis for go for strategy foster </p>
+                    <div className='w-[80%] mx-auto flex p-6 flexBetween'>
                         <div className='flex flex-row gap-4 items-center'>
                             <Image 
                                 src="circle.svg"
