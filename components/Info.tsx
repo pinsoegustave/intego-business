@@ -29,7 +29,7 @@ export default function Info() {
           {/* Starts here */}
           <div className="bg-[#F1F5EB] my-10 p-8 rounded-xl">
             <div className="flex flex-col gap-8">
-            <div className="flex gap-8">
+            <div className="flex flex-col md:flex-row gap-8">
               <label htmlFor="Email" className="flex-1">
                 <span className="text-sm font-bold text-[#034833] block mb-2">
                   Your Email
