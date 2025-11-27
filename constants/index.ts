@@ -6,12 +6,12 @@ export const NAV_LINKS = [
         label: "Home",
     },
     {
-        href: '/',
+        href: '/about-us',
         key: "about",
         label: "About us",
     },
     {
-        href: '/',
+        href: '/services',
         key: "services",
         label: "Services",
     },
