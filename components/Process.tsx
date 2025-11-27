@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function Process() {
   return (
-    <section className='w-[96%] mx-auto h-[450px] text-white rounded-4xl mt-10 border-2 border-fuchsia-500' style={{ backgroundImage: "url('lines.svg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
-        <div className='max-container padding-container p-8 border-2 border-amber-400'>
+    <section className='w-[96%] mx-auto h-[450px] text-white rounded-4xl mt-10' style={{ backgroundImage: "url('lines.svg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
+        <div className='max-container padding-container p-8'>
             <div className='flex justify-between'>
                 <div className='mt-10'>
                     <h3 className="text-md font-bold text-[#034833]">PROCESS OVERVIEW</h3>
