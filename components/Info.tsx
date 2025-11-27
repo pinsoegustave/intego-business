@@ -4,8 +4,8 @@ import Button from "./Button";
 
 export default function Info() {
   return (
-    <section className="w-[96%] mx-auto text-white rounded-4xl border-2 border-fuchsia-600 my-10 py-10 ">
-      <div className="padding-container max-container mb-5 md:flex mx-auto justify-center gap-10 border border-amber-500">
+    <section className="w-[96%] mx-auto text-white rounded-4xl my-10 py-10 ">
+      <div className="padding-container max-container mb-5 md:flex mx-auto justify-center gap-10">
         {/* Person*/}
         <div>
           <Image
@@ -17,7 +17,7 @@ export default function Info() {
           />
         </div>
         {/* Form */}
-        <div className="border-2 border-red-700">
+        <div className="">
           <div className="flex flex-col justify-end">
             <h3 className="text-md font-bold text-[#034833]">
               CONTACT INFORMATION
@@ -27,7 +27,7 @@ export default function Info() {
             </h1>
           </div>
           {/* Starts here */}
-          <div className="border border-amber-400 bg-[#F1F5EB] my-10 p-8 rounded-xl">
+          <div className="bg-[#F1F5EB] my-10 p-8 rounded-xl">
             <div className="flex flex-col gap-8">
             <div className="flex gap-8">
               <label htmlFor="Email" className="flex-1">
