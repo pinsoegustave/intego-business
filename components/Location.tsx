@@ -5,7 +5,7 @@ import Card from "./Card";
 export default function Location() {
   return (
     <section className="max-container padding-container my-10 py-10">
-      <div className="border-2 border-e-amber-400 text-center items-center justify-center p-4">
+      <div className="text-center items-center justify-center p-4">
         <div className="flex flex-col items-center justify-center mb-8">
           <h3 className="text-md font-bold text-[#83CD20]">
             CONTACT INFORMATION
@@ -26,7 +26,7 @@ export default function Location() {
           ))}
         </div>
         {/* Card */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 p-6 mt-16 bg-white rounded-lg shadow-lg">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 p-6 mt-16 bg-white rounded-lg shadow-2xl">
           {/* Left side - Legend content */}
           <Card />
 
