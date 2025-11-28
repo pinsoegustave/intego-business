@@ -4,8 +4,8 @@ import Button from "./Button";
 
 export default function About() {
   return (
-    <section className="max-container padding-container relative flexBetween">
-      <div className="grid grid-cols-2 p-4">
+    <section className="max-container padding-container relative flexBetween py-12">
+      <div className="hidden md:grid md:grid-cols-2 p-4">
         <Image
           src="rectangle.svg"
           alt="Image 1"
