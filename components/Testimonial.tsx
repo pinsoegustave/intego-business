@@ -4,23 +4,23 @@ import React from 'react'
 
 export default function Testimonial() {
   return (
-    <section className='w-full'>
-        <div className='padding-container max-container p-5 my-4'>
+    <section className='w-full py-2 sm:py-12 lg:py-20'>
+        <div className='padding-container max-container'>
             <Image 
             src="quote.svg"
             alt='quote'
             width={320}
             height={320}
-            className='relative mx-auto mt-32 ml-42'
+            className='mx-auto mb-4 w-16 h-16 sm:w-20 sm:h-20'
             />
-            <div className='text-center relative mx-auto -mt-[20%]'>
+            <div className='text-center mx-auto mb-12 sm:mb-16'>
                 <h3 className="text-md font-bold text-[#034833]">CLIENT TESTIMONIALS</h3>
-                <h1 className="mx-auto w-[380px] text-[#034833] text-center regular-32 font-bold">Empowering Your Path to Prosperity</h1>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#034833] max-w-3xl mx-auto">Empowering Your Path to Prosperity</h1>
             </div>
-            <div className='flex mt-10 items-center'>
-                <div className='w-[50%] h-[40%] rounded-2xl shadow-2xl mx-auto -mr-8 z-10 bg-[#FFFF]'>
-                    <p className='regular-24 text-[#034833] w-[620px] mx-auto p-6'>Leverage agile frameworks to provide a robust syns is for strategy foster Leverage agile frameworks to provide a robust synopsis for go for strategy foster </p>
-                    <div className='w-[80%] mx-auto flex p-6 flexBetween'>
+            <div className='flex flex-col lg:flex-row items-center gap-8 lg:gap-12'>
+                <div className='bg-white rounded-2xl shadow-2xl md:-mr-24 p-6 sm:p-8 flex-1 z-1 w-full'>
+                    <p className='text-lg sm:text-xl text-[#034833] leading-relaxed mb-6 sm:mb-8'>Leverage agile frameworks to provide a robust syns is for strategy foster Leverage agile frameworks to provide a robust synopsis for go for strategy foster </p>
+                    <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4'>
                         <div className='flex flex-row gap-4 items-center'>
                             <Image 
                                 src="circle.svg"
@@ -45,13 +45,15 @@ export default function Testimonial() {
                         </div>
                         </div>
                     <div>
-                    <Image 
+                    <div className='flex-1 w-full'>
+                        <Image 
                       src="recquo.svg"
                       alt='recquote'
                       width={630}
                       height={611}
-                      className=''  
+                      className='w-full h-auto object-contain'  
                     />
+                    </div>
                 </div>
             </div>
         </div>
