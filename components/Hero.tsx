@@ -4,20 +4,25 @@ import Button from './Button'
 
 export default function Hero() {
   return (
-    <section className='padding-container flex flex-col gap-20 pt-0 pb-32 md:gap-28 lg:pb-20 xl:flex-row relative'>
-        <Image 
+    <section className='padding-container flex flex-col items-center justify-center min-h-screen py-16 md:py-24 lg:py-32 relative overflow-hidden'>
+        <div className='absolute inset-0 z-0'>
+            <Image 
             src="frame.svg"
             alt='hero-image'
-            width={100}
-            height={100}
-            className='w-full h-full bg-[#034833]'
+            // width={100}
+            // height={100}
+            fill
+            className='w-full h-full object-cover bg-[#034833]'
+            priority
         />
+        </div>
+        
          {/*Middle text  */}
-        <div className='text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
-            <h1 className='text-2xl md:text-[60px] font-bold mb-4'>Journey With Confidence <span className='text-green-400'>Strike</span> Your Target</h1>
-            <p className='mt-6 text-sm md:text-[14px] max-w-lg mx-auto mb-6 items-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minima perferendis magni voluptates fugit beatae, quia voluptatem, </p>
+        <div className='relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight'>Journey With Confidence{' '} <span className='text-green-400 block sm:inline-block mt-2 sm:mt-0 '>Strike</span> Your Target</h1>
+            <p className='text-sm sm:text-md md:text-lg text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minima perferendis magni voluptates fugit beatae, quia voluptatem, </p>
             
-            <div className='flex justify-center items-center mt-4'>
+            <div className='flex justify-center mt-4'>
                 <Button 
                     type='button'
                     title='Reach out'
