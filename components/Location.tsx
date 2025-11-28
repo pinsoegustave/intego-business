@@ -31,7 +31,7 @@ export default function Location() {
           <Card />
 
           {/* Right side - Map */}
-          <div className="flex-1 w-1/2 h-64 bg-gray-100 rounded-lg border border-gray-300 flex items-center justify-center">
+          <div className="flex-1 w-full md:w-1/2 h-80 md:h-64 bg-gray-100 rounded-lg border border-gray-300 flex items-center justify-center">
             <div className="text-center text-gray-500">
               <div className="text-lg font-semibold mb-2">Location Map</div>
               <div className="text-sm">Map visualization area</div>

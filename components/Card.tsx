@@ -4,7 +4,7 @@ import React from "react";
 export default function Card() {
   return (
     <div className="w-full max-w-4xl mx-auto">
-      <div className="flex items-stretch justify-between gap-8">
+      <div className="flex items-stretch flex-col md:flex-row justify-between gap-8">
         {/* Left Column - Contact Information */}
         <div className="flex-1 space-y-6">
           <div className="flex items-start gap-4">
