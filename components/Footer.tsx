@@ -1,64 +1,97 @@
-import { FOOTER_LINKS, TERMS } from '@/constants';
-import Image from 'next/image'
-import Link from 'next/link';
-import React from 'react'
-
-
+import { FOOTER_LINKS, TERMS } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export default function Footer() {
   return (
-    <footer className='w-full max-w-full bg-[#034833] mt-24'>
-        <div className="mt-4 rotate-[150] transform-3d">
-            <Image 
-                src="flip.svg"
-                alt='rect'
-                width={285}
-                height={270}
-                className='object-contain'
-            />
+    <footer className="w-full bg-[#034833] text-white mt-16 sm:mt-20 lg:mt-24">
+      {/* Decorative Element */}
+      <div className="flex justify-center -mt-8 sm:-mt-12 lg:-mt-16">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="flip.svg"
+            alt="background pattern"
+            fill
+            className="object-cover object-center opacity-20"
+          />
         </div>
-        <div className='max-container padding-container flex w-full flex-col text-white'>
-            <div className='flex -mt-[12%]'>
-                <div className='flex flex-col items-start justify-center -mt-[12%] gap-[4%] md:flex-col'>
-                <Link href={"/"} className='-100'>
-                    <h1 className='text-md font-bold'>INTEGO</h1>
-                </Link>
-                <p>We Help You Strike Your Target</p>
-            </div>
-            <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1 ml-[25%] -mt-[4%]'>
-                { FOOTER_LINKS.map((columns) => (
-                    <FooterColumn title={columns.title} key={columns.title}>
-                        <ul className='regular-14 flex flex-col gap-4 text-gray-30 '>
-                            {columns.links.map((link) => (
-                                <p key={link}>{link}</p>
-                            ))}
-                        </ul>
-                    </FooterColumn>
-                ))}
-            </div>
-            </div>
-        </div>
-        <div className='text-white my-4 border bg-[#FFFFFF]' />
-            <div className='flex items-end justify-end mr-42 gap-8 text-white '>
-                { TERMS.map((term) => (
-                    <ul className='padding-container mt-4 mb-10' key={term}>{term}</ul>
-                )) }
-            </div>
-    </footer>
-  )
-}
+      </div>
 
+      {/* Main Footer Content */}
+      <div className="max-container padding-container relative z-10">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 py-8 sm:py-12">
+          {/* Compact brand section for mobile */}
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left lg:w-1/3 xl:w-1/4">
+              <Link href="/" className="mb-4">
+                <h1 className="text-xl sm:text-2xl font-bold text-white">
+                  INTEGO
+                </h1>
+              </Link>
+              <p className="text-sm text-gray-300">
+                We Help You Strike Your Target
+              </p>
+          </div>
+
+          {/* Links Section */}
+          <div className="flex-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
+              {FOOTER_LINKS.map((column) => (
+                <FooterColumn key={column.title} title={column.title}>
+                  <ul className="flex flex-col gap-3 sm:gap-4 text-gray-300">
+                    {column.links.map((link) => (
+                      <li key={link}>
+                        <p className="text-sm sm:text-base hover:text-white transition-colors duration-200 cursor-pointer">
+                          {link}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </FooterColumn>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-gray-400 my-6 sm:my-8" />
+
+        {/* Bottom Section - Terms */}
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 py-4 sm:py-6">
+          <div className="text-sm sm:text-base text-gray-300 text-center sm:text-left order-2 sm:order-1">
+            <p>
+              &copy; {new Date().getFullYear()} Intego Solution. All rights reserved.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 order-1 sm:order-2">
+            {TERMS.map((term) => (
+              <p
+                key={term}
+                className="text-sm sm:text-base text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer whitespace-nowrap"
+              >
+                {term}
+              </p>
+            ))}
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
 
 type FooterColumnProps = {
-    title: string,
-    children: React.ReactNode;
-}
+  title: string;
+  children: React.ReactNode;
+};
 
 const FooterColumn = ({ title, children }: FooterColumnProps) => {
-    return (
-        <div className='flex flex-col gap-5'>
-            <h3 className='font-bold text-md whitespace-nowrap'>{title}</h3>
-            {children}
-        </div>
-    )
-}
+  return (
+    <div className="flex flex-col gap-4 sm:gap-5">
+      <h3 className="font-bold text-lg sm:text-xl text-white whitespace-nowrap">
+        {title}
+      </h3>
+      {children}
+    </div>
+  );
+};
