@@ -13,50 +13,72 @@ export default function Services() {
           </h1>
         </div>
         {/* rectangles */}
-        <div className="mt-12 flex flex-rows-3 gap-8">
-          <div className="w-[410px] h-[400px] bg-white flex flex-col items-center justify-center rounded-2xl">
-            <div className="bg-[#83CD20] text-white p-4 my-4 flex items-center justify-center rounded-full">
-                <Image 
-                src="book.svg"
-                alt="Human"
-                width={50}
-                height={50}
-                className="object-contain"
-            />
+        <div className="mt-8 sm:mt-12 lg:mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+            {/* Card 1 */}
+            <div className="bg-white flex flex-col items-center justify-center rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+              <div className="bg-[#83CD20] text-white p-4 mb-4 sm:mb-6 flex items-center justify-center rounded-full w-16 h-16 sm:w-20 sm:h-20">
+                <Image
+                  src="book.svg"
+                  alt="Human Resource Management"
+                  width={50}
+                  height={50}
+                  className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+                />
+              </div>
+              <div className="text-center flex flex-col items-center">
+                <h4 className="text-[#034833] text-lg sm:text-xl lg:text-[22px] font-semibold mb-3 sm:mb-4 leading-tight">
+                  Human Resource Management
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-2 sm:px-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  aut, cumque quam recusandae unde nesciunt officia veritatis.
+                </p>
+              </div>
             </div>
-            <div className="text-center">
-                <h4 className="text-[#034833] text-[18px] leading-7 font-semibold">Human Resource Management</h4>
-                <p className="mx-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aut, cumque quam recusandae unde nesciunt officia veritatis, tempora ab placeat sapiente quo praesentium officiis qui animi possimus atque eos totam.</p>
+
+            {/* Card 2 */}
+            <div className="bg-white border-2 border-green-500 flex flex-col items-center justify-center rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+              <div className="bg-[#83CD20] text-white p-4 mb-4 sm:mb-6 flex items-center justify-center rounded-full w-16 h-16 sm:w-20 sm:h-20">
+                <Image
+                  src="visa.svg"
+                  alt="Bookkeeping"
+                  width={50}
+                  height={50}
+                  className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+                />
+              </div>
+              <div className="text-center flex flex-col items-center">
+                <h4 className="text-[#034833] text-lg sm:text-xl lg:text-[22px] font-semibold mb-3 sm:mb-4 leading-tight">
+                  Bookkeeping
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-2 sm:px-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  aut, cumque quam recusandae unde nesciunt officia veritatis.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="w-[410px] h-[400px] bg-white border border-green-500 flex flex-col items-center justify-center rounded-2xl">
-            <div className="bg-[#83CD20] text-white p-4 my-4 flex items-center justify-center rounded-full">
-                <Image 
-                src="visa.svg"
-                alt="Human"
-                width={50}
-                height={50}
-                className="object-contain"
-            />
-            </div>
-            <div className="text-center">
-                <h4 className="text-[#034833] text-[18px] leading-7 font-semibold">Bookkeeping</h4>
-                <p className="mx-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aut, cumque quam recusandae unde nesciunt officia veritatis, tempora ab placeat sapiente quo praesentium officiis qui animi possimus atque eos totam.</p>
-            </div>
-          </div>
-          <div className="w-[410px] h-[400px] bg-white flex flex-col items-center justify-center rounded-2xl">
-            <div className="bg-[#83CD20] text-white p-4 my-4 flex items-center justify-center rounded-full">
-                <Image 
-                src="book.svg"
-                alt="Human"
-                width={45}
-                height={45}
-                className="z-10 object-contain"
-            />
-            </div>
-            <div className="text-center">
-                <h4 className="text-[#034833] text-[18px] leading-7 font-semibold">Accounting</h4>
-                <p className="mx-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aut, cumque quam recusandae unde nesciunt officia veritatis, tempora ab placeat sapiente quo praesentium officiis qui animi possimus atque eos totam.</p>
+
+            {/* Card 3 */}
+            <div className="bg-white flex flex-col items-center justify-center rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+              <div className="bg-[#83CD20] text-white p-4 mb-4 sm:mb-6 flex items-center justify-center rounded-full w-16 h-16 sm:w-20 sm:h-20">
+                <Image
+                  src="book.svg"
+                  alt="Accounting"
+                  width={45}
+                  height={45}
+                  className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+                />
+              </div>
+              <div className="text-center flex flex-col items-center">
+                <h4 className="text-[#034833] text-lg sm:text-xl lg:text-[22px] font-semibold mb-3 sm:mb-4 leading-tight">
+                  Accounting
+                </h4>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-2 sm:px-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  aut, cumque quam recusandae unde nesciunt officia veritatis.
+                </p>
+              </div>
             </div>
           </div>
         </div>
