@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Process() {
   return (
-    <section className='w-[96%] mx-auto h-[450px] text-white rounded-4xl mt-10' style={{ backgroundImage: "url('lines.svg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
+    <section className='w-[96%] mx-auto text-white rounded-4xl mt-10' style={{ backgroundImage: "url('lines.svg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
         <div className='max-container padding-container p-8'>
             <div className='flex justify-between'>
                 <div className='mt-10'>
@@ -12,7 +12,8 @@ export default function Process() {
                 </div>
                 <p className='text-black text-sm flex items-end w-[30%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac</p>
             </div>
-            <div className='flexBetween w-full'>
+            {/* Old cards */}
+            <div className='flex flex-col md:flex-row w-full'>
                 <div className='flex gap-4 mt-12'>
                 <div className='w-40 h-40 bg-[#83CD20] rounded-lg flex items-center justify-center relative'>
                     <div className='absolute top-2 left-2'>
