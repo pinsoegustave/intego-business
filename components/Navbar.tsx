@@ -1,9 +1,21 @@
- import { NAV_LINKS } from '@/constants'
+"use client"
+import { NAV_LINKS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Navbar() {
+
+    const [ isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
+    const closeMobileMenu = () => {
+        setIsMobileMenuOpen(false);
+    }
+
   return (
     <nav className="w-full py-4 px-4 sm:px-6 lg:px-8 bg-white">
     <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -50,19 +62,24 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Menu Button - Hidden on desktop */}
-            <button className="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100">
+            <button className="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" 
+                onClick={toggleMobileMenu}
+                aria-label='Toggle menu'
+                aria-expanded={isMobileMenuOpen}
+            >
                 <Image 
-                    src="/menu.svg"
-                    alt="Menu"
+                    src={isMobileMenuOpen ? "/svgrepo.svg" : "/menu.svg"}
+                    alt={isMobileMenuOpen ? "Close" : "Open"}
                     width={24}
                     height={24}
+                    className=""
                 />
             </button>
         </div>
     </div>
 
     {/* Mobile Menu - Dropdown */}
-    <div className="lg:hidden">
+    <div className={`lg:hidden transition-all duration-300 ease-in-out transform ${ isMobileMenuOpen ? 'max-h-96 opacity-100 translate-y-0': 'max-h-0 opacity-0 -translate-y-2'}`}>
         {/* Add your mobile dropdown menu here */}
         <div className="px-4 pt-2 pb-3 space-y-1 bg-white border-t">
             {NAV_LINKS.map((link) => (
