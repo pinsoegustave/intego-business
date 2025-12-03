@@ -8,8 +8,8 @@ export default function Services() {
         <div className="">
           <h2 className="text-sm font-bold text-[#034833]">OUR SERVICES</h2>
           <h1 className="text-[50px] font-bold leading-[60px]">
-            Adventure Unleashed <br />{" "}
-            <span className="text-[#034833]"> Discover Your Next </span>
+            Expert Business Solutions <br />
+            <span className="text-[#034833]">For Sustainable Growth</span>
           </h1>
         </div>
         {/* rectangles */}

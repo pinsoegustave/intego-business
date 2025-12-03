@@ -25,51 +25,51 @@ export const NAV_LINKS = [
 export const SERVICES = [
     {
         icon: "refugee.svg",
-        key: "abc",
+        key: "hr-management",
         title: "Human Resource Management",
-        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+        desc: "Streamline your HR processes with our comprehensive human resource management solutions. From recruitment to employee retention, we help you build and maintain a productive workforce while ensuring compliance with labor laws and regulations."
     },
     {
         icon: "/browser.png",
-        key: "abd",
+        key: "bookkeeping",
         title: "Bookkeeping",
-        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+        desc: "Accurate and timely bookkeeping services that keep your financial records in perfect order. We handle all aspects of day-to-day financial transactions, ensuring your books are audit-ready at all times."
     },
     {
         icon: "/law.png",
-        key: "abe",
-        title: "Accounting",
-        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+        key: "accounting",
+        title: "Accounting Services",
+        desc: "Professional accounting services tailored to your business needs. We provide financial reporting, budgeting, and cash flow management to help you make informed business decisions."
     },
     {
         icon: "meeting.svg",
-        key: "abf",
+        key: "tax-declaration",
         title: "Tax Declaration",
-        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+        desc: "Expert tax preparation and filing services to ensure compliance while maximizing your deductions. Our tax professionals stay current with the latest tax laws to optimize your tax position."
     },
     {
         icon: "shield.svg",
-        key: "abg",
-        title: "Management Consultancy",
-        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+        key: "management-consultancy",
+        title: "Business Strategy & Consulting",
+        desc: "Transform your business with our strategic consulting services. We help you identify growth opportunities, optimize operations, and implement effective business strategies for long-term success."
     },
     {
         icon: "meeting.svg",
-        key: "abh",
-        title: "Financial Consultancy",
-        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+        key: "financial-consultancy",
+        title: "Financial Advisory",
+        desc: "Comprehensive financial advisory services including investment planning, risk management, and financial forecasting to help you achieve your business and personal financial goals."
     },
     {
         icon: "/law.png",
-        key: "abi",
-        title: "Tax Declaration",
-        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+        key: "tax-planning",
+        title: "Tax Planning",
+        desc: "Proactive tax planning strategies to minimize liabilities and maximize your financial efficiency. We work year-round to ensure your tax strategy aligns with your business objectives."
     },
     {
         icon: "shield.svg",
-        key: "abj",
-        title: "Management Consultancy",
-        desc: "Dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nun Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac "
+        key: "business-setup",
+        title: "Business Setup & Compliance",
+        desc: "End-to-end support for new business setup, including company registration, licensing, and ongoing compliance management to keep your business on the right side of regulations."
     },
 ]
 

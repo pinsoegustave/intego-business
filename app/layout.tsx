@@ -16,12 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${plusJakartaSans.variable}`} >
+      <body className={`${plusJakartaSans.variable}`} suppressHydrationWarning>
         <Navbar />
           <main className="relative overflow-hidden">
             {children}
           </main>
-
       </body>
     </html>
   );
