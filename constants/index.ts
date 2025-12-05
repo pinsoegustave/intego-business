@@ -96,16 +96,12 @@ export const FOOTER_LINKS = [
         title: "Contact Us",
         links: [
             'X/ Twitter',
-            'Email',
-            'Instagram',
-            'Facebook'
+            'Email'
         ]
     }
 ];
 
 export const TERMS = [
-    'Terms & Condition',
-    'Privacy Policy',
     'Contact Us'
 ]
 

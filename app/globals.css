@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&display=swap');
 
 @import "tailwindcss";
 
@@ -8,13 +8,14 @@
     padding: 0;
     box-sizing: border-box;
   }
-  html {
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  
+  body {
+    font-family: 'Jost', system-ui, sans-serif;
   }
 }
 
 :root {
-  --font-plus-jakarta: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-jost: 'Jost', system-ui, sans-serif;
 }
 
 html {
@@ -26,13 +27,14 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Jost', system-ui, sans-serif;
 }
 
 
 @layer utilities {
 
   .btn_white {
-    @apply border-none bg-[#83CD20] text-[white] hover:bg-gray-50 hover:text-black focus:text-green-500
+    @apply border-2 border-transparent bg-[#83CD20] text-white hover:bg-gray-50 hover:text-[#83CD20] hover:border-[#83CD20] focus:text-green-500 transition-all duration-300
   }
   .btn_white_text {
     @apply border-2 border-white bg-white text-gray-900 hover:bg-gray-50 hover:border-gray-200 focus:ring-white
@@ -104,35 +106,35 @@ body {
   }
 
   .bold-88 {
-    @apply text-[88px] font-[700px] leading-[120%];
+    @apply text-[88px] font-[600] leading-[120%];
   }
 
   .bold-64 {
-    @apply text-[64px] font-[700px] leading-[120%];
+    @apply text-[64px] font-[600] leading-[120%];
   }
 
   .bold-52 {
-    @apply text-[52px] font-[700px] leading-[120%];
+    @apply text-[52px] font-[600] leading-[120%];
   }
 
   .bold-40 {
-    @apply text-[40px] font-[700px] leading-[120%];
+    @apply text-[40px] font-[600] leading-[120%];
   }
 
   .bold-32 {
-    @apply text-[32px] font-[700px] leading-[120%];
+    @apply text-[32px] font-[600] leading-[120%];
   }
 
   .bold-20 {
-    @apply text-[20px] font-[700px];
+    @apply text-[20px] font-[600];
   }
 
   .bold-18 {
-    @apply text-[18px] font-[700px];
+    @apply text-[18px] font-[600];
   }
 
   .bold-16 {
-    @apply text-[16px] font-[700px];
+    @apply text-[16px] font-[600];
   }
 }
 
@@ -145,4 +147,20 @@ body {
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+/* Ensure all links are clickable */
+nav a, footer a {
+  pointer-events: auto !important;
+  z-index: 51 !important;
+  position: relative;
+}
+
+/* Fix any overlay issues */
+main {
+  pointer-events: none;
+}
+
+main * {
+  pointer-events: auto;
 }

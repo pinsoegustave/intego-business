@@ -31,8 +31,7 @@ export default function Services() {
                   Human Resource Management
                 </h4>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-2 sm:px-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  aut, cumque quam recusandae unde nesciunt officia veritatis.
+                  Comprehensive HR solutions including recruitment, payroll management, employee relations, and compliance with labor laws to build and maintain a productive workforce.
                 </p>
               </div>
             </div>
@@ -53,8 +52,7 @@ export default function Services() {
                   Bookkeeping
                 </h4>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-2 sm:px-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  aut, cumque quam recusandae unde nesciunt officia veritatis.
+                  Accurate and timely bookkeeping services to maintain your financial records, track expenses, and prepare for tax season with confidence and precision.
                 </p>
               </div>
             </div>
@@ -75,8 +73,7 @@ export default function Services() {
                   Accounting
                 </h4>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed px-2 sm:px-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  aut, cumque quam recusandae unde nesciunt officia veritatis.
+                  Professional accounting services including financial statement preparation, tax planning, and financial analysis to help you make informed business decisions.
                 </p>
               </div>
             </div>

@@ -17,7 +17,7 @@ export default function Navbar() {
     }
 
   return (
-    <nav className="w-full py-4 px-4 sm:px-6 lg:px-8 bg-white">
+    <nav className="w-full py-4 px-4 sm:px-6 lg:px-8 bg-white relative z-50">
     <div className="max-w-7xl mx-auto flex items-center justify-between">
         
         {/* Left - Logo */}
@@ -57,7 +57,7 @@ export default function Navbar() {
                 />
                 <div className="text-right">
                     <p className="text-sm text-gray-600">Need help?</p>
-                    <p className="text-sm font-semibold text-[#034833]">(250) 234-5678</p>
+                    <p className="text-sm font-semibold text-[#034833]">(250)788-353-262</p>
                 </div>
             </div>
 

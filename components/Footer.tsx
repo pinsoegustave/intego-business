@@ -41,9 +41,12 @@ export default function Footer() {
                   <ul className="flex flex-col gap-3 sm:gap-4 text-gray-300">
                     {column.links.map((link) => (
                       <li key={link}>
-                        <p className="text-sm sm:text-base hover:text-white transition-colors duration-200 cursor-pointer">
+                        <Link 
+                          href="/contact"
+                          className="text-sm sm:text-base hover:text-white transition-colors duration-200 cursor-pointer"
+                        >
                           {link}
-                        </p>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -60,18 +63,19 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 py-4 sm:py-6">
           <div className="text-sm sm:text-base text-gray-300 text-center sm:text-left order-2 sm:order-1">
             <p>
-              &copy; {new Date().getFullYear()} Intego Solution. All rights reserved.
+              &copy; {new Date().getFullYear()} Intego Business and Finance Consultancy. All rights reserved.
             </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 sm:gap-8 order-1 sm:order-2">
             {TERMS.map((term) => (
-              <p
+              <Link 
                 key={term}
-                className="text-sm sm:text-base text-gray-300 hover:text-white transition-colors duration-200 cursor-pointer whitespace-nowrap"
+                href="/contact"
+                className="text-sm sm:text-base text-gray-300 hover:text-white transition-colors duration-200 whitespace-nowrap"
               >
                 {term}
-              </p>
+              </Link>
             ))}
           </div>
         </div>

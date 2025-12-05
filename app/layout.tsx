@@ -1,26 +1,33 @@
-import type { Metadata } from "next";
-import { plusJakartaSans } from "./font";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
 
+import { Jost } from 'next/font/google';
+import './globals.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import ClientLayout from '@/components/ClientLayout';
 
-export const metadata: Metadata = {
-  title: "Intego Business Company",
-  description: "Created and first built by Pinsoe Gustave",
-};
+const jost = Jost({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-jost',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={`${plusJakartaSans.variable}`} suppressHydrationWarning>
-        <Navbar />
-          <main className="relative overflow-hidden">
+    <html lang="en" className={jost.className}>
+      <head />
+      <body className="font-sans">
+        <ClientLayout>
+          <Navbar />
+          <main className="relative">
             {children}
           </main>
+          <Footer />
+        </ClientLayout>
       </body>
     </html>
   );

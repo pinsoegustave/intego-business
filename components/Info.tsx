@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Button from "./Button";
+import ContactForm from "./ContactForm";
 
 export default function Info() {
   return (
@@ -28,63 +28,7 @@ export default function Info() {
           </div>
           {/* Starts here */}
           <div className="bg-[#F1F5EB] my-10 p-8 rounded-xl">
-            <div className="flex flex-col gap-8">
-            <div className="flex flex-col md:flex-row gap-8">
-              <label htmlFor="Email" className="flex-1">
-                <span className="text-sm font-bold text-[#034833] block mb-2">
-                  Your Email
-                </span>
-                <input
-                  type="email"
-                  id="Email"
-                  placeholder="Your Email"
-                  className="bg-[#FFFFFF] w-full rounded-full border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#034833] sm:text-sm text-black"
-                />
-              </label>
-              <label htmlFor="phone" className="flex-1">
-                <span className="text-sm font-bold text-[#034833] block mb-2">
-                  Your Phone
-                </span>
-                <input
-                  type="tel"
-                  id="phone"
-                  placeholder="Your Phone"
-                  className="bg-[#FFFFFF] w-full rounded-full border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#034833] sm:text-sm text-black"
-                />
-              </label>
-            </div>
-            <div className="flex flex-col gap-8">
-              <label htmlFor="address" className="flex-1">
-                <span className="text-sm font-bold text-[#034833] block mb-2">
-                  Your Address
-                </span>
-                <input
-                  type="text"
-                  id="address"
-                  placeholder="Your Address"
-                  className="bg-[#FFFFFF] w-full rounded-full border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#034833] sm:text-sm text-black"
-                />
-              </label>
-              <label htmlFor="message" className="flex-1">
-                <span className="text-sm font-bold text-[#034833] block mb-2">
-                  Message
-                </span>
-                <textarea
-                  id="message"
-                  rows={4}
-                  placeholder="Type your message here..."
-                  className="bg-[#FFFFFF] w-full rounded-xl border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#034833] resize-none text-black"
-                />
-              </label>
-            </div>
-            <div className="flex justify-center w-full">
-              <Button 
-                title="Send Message"
-                type="submit"
-                variant="btn_white"
-              />
-            </div>
-          </div>
+            <ContactForm />
           </div>
         </div>
       </div>
