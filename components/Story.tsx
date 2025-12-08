@@ -74,7 +74,7 @@ export default function Story() {
             <div className="space-y-6 pt-12">
               <motion.div 
                 variants={fadeIn}
-                className="bg-gradient-to-r from-[#034833] to-[#0a5a45] text-white p-6 rounded-xl h-40 flex flex-col justify-center items-center text-center hover:shadow-lg transition-shadow duration-300"
+                className="bg-linear-to-r from-[#034833] to-[#0a5a45] text-white p-6 rounded-xl h-40 flex flex-col justify-center items-center text-center hover:shadow-lg transition-shadow duration-300"
               >
                 <span className="text-5xl font-bold">2+</span>
                 <p className="text-xl font-medium mt-2">Years of Excellence</p>

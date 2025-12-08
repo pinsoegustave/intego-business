@@ -116,7 +116,6 @@ export default function ContactForm() {
             />
           </label>
         </div>
-
         <div>
           <label htmlFor="name" className="block">
             <span className="text-sm font-bold text-[#034833] block mb-2">
